@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>OptimizedHTML 5</title>
+	<meta name="description" content="dogxtension">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dest/preview.jpg">
+	<link rel="stylesheet" href="css/app.min.css">
+
+
+</head>
+
+<body id="ddd">
+	<!-- CUSTOM HTML -->
+
+	<div id="page-preloader" class="preloader">
+		<svg id="svg-sprite">
+			<symbol id="paw" viewBox="0 0 249 209.32">
+				<ellipse cx="27.917" cy="106.333" stroke-width="0" rx="27.917" ry="35.833"/>
+				<ellipse cx="84.75" cy="47.749" stroke-width="0" rx="34.75" ry="47.751"/>
+				<ellipse cx="162" cy="47.749" stroke-width="0" rx="34.75" ry="47.751"/>
+				<ellipse cx="221.083" cy="106.333" stroke-width="0" rx="27.917" ry="35.833"/>
+				<path stroke-width="0" d="M43.98 165.39s9.76-63.072 76.838-64.574c0 0 71.082-6.758 83.096 70.33 0 0 2.586 19.855-12.54 31.855 0 0-15.75 17.75-43.75-6.25 0 0-7.124-8.374-24.624-7.874 0 0-12.75-.125-21.5 6.625 0 0-16.375 18.376-37.75 12.75 0 0-28.29-7.72-19.77-42.86z"/>
+			</symbol>
+		</svg>
+		
+		<div class="ajax-loader">
+			<div class="paw"><svg class="icon"><use xlink:href="#paw" /></svg></div>
+			<div class="paw"><svg class="icon"><use xlink:href="#paw" /></svg></div>
+			<div class="paw"><svg class="icon"><use xlink:href="#paw" /></svg></div>
+			<div class="paw"><svg class="icon"><use xlink:href="#paw" /></svg></div>
+			<div class="paw"><svg class="icon"><use xlink:href="#paw" /></svg></div>
+			<div class="paw"><svg class="icon"><use xlink:href="#paw" /></svg></div>
+		</div>
+	</div>
+	<header  class="navbar">
+		<div class="mobile-nav">
+			<input class="burger" id="burger" type="checkbox" />
+
+			<label for="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+
+			<nav>    
+				<ul class="ul-trigger">
+					<li class="nav-item">
+						<a class="nav-link-mob active" href="#references">
+							Filmy porównawcze
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link-mob" href="#photos">
+							Zdjecia
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link-mob" href="#sizes">
+							Pomiary
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link-mob" href="#opinie">
+							Opinie
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link-mob" href="#about">
+							o nas
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link-mob" href="#contact">
+							kontakt
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link-mob" href="/file/pobierz.docx" download>
+							Zasady sprzedazy  / Gwarancja
+						</a>
+					</li>
+					
+				</ul>
+			</nav>
+		</div>
+		<div class="help_panel">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-sm">
+						<ul class="flags">
+							<li><a href="/pl"><img src="images/src/pl.png" alt="pl"></a></li>
+							<li><a href="/ru"><img src="images/src/parasha.png" alt="parasha"></a></li>
+							<li><a href="/uk"><img src="images/src/uk.png" alt="uk"></a></li>
+							<!-- <li>1|2|3|4</li> -->
+						</ul>
+					</div>
+					<div class="col-sm">
+						<div class="phone">
+							<img class="phone-img" src="images/src/phone.png" alt="phone">
+							<a href="tel:+48798254425">+48 798 254 425</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="logo-container">
+			<div class="container">
+				<div class="row">
+					<div class="logo-wrap">
+						<img class="img-logo" src="images/src/logo.svg" alt="logo">
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav id="nav" class="nav">
+			<div class="container">
+				<div class="row">
+					<ul class="ul-trigger">
+						<li class="nav-item">
+							<a class="nav-link" href="#references">
+								Filmy porównawcze
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#photos">
+								Zdjecia
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#sizes">
+								Pomiary
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#opinie">
+								Opinie
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">
+								o nas
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">
+								kontakt
+							</a>
+						</li>
+						<li class="nav-item doc">
+							<a class="nav-link" href="/file/pobierz.docx">
+								Zasady sprzedazy  / Gwarancja
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+			
+		</nav>
+	</header>
+	<section id="references" class="references movie" data-aos="fade-up">
+		<h2 class="h2">Filmy porównawcze</h2>
+		<div class="container">
+			<div class="row">
+
+				<div class="video-references">
+					<div class="col-md-6 col-xl-4">
+						<video  controls>
+							<source src="video/1.mp4">
+						   </video>
+					</div>
+					<div class="col-md-6 col-xl-4">
+						<video controls>
+							<source src="video/2.mp4">
+						   </video>
+					</div>
+					<div class="col-md-6 col-xl-4">
+						<video controls>
+							<source src="video/3.mp4">
+						   </video>
+					</div>
+					<div class="col-md-6 col-xl-4">
+						<video controls>
+							<source src="video/4.mp4">
+						   </video>
+					</div>
+					<div class="col-md-6 col-xl-4">
+						<video controls>
+							<source src="video/5.mp4">
+						   </video>
+					</div>
+					<div class="col-md-6 col-xl-4">
+						<video controls>
+							<source src="video/6.mp4">
+						   </video>
+					</div>
+
+					
+
+				</div>
+				
+			</div>
+		</div>
+		
+	</section>
+	<section id="photos" class="photos movie"   data-aos="fade-down">
+		<h2 class="h2">Zdjecia</h2>
+		<div class="container">
+			<div class="row">
+				<div class="m-p-g" >
+					<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+						<img src="images/dest/gallery/1.jpg" data-full="images/dest/gallery/1.jpg" class="m-p-g__thumbs-img shadow" alt="portfolio"/>
+						<img src="images/dest/gallery/2.jpg" data-full="images/dest/gallery/2.jpg" class="m-p-g__thumbs-img shadow" alt="portfolio"/>
+						<img src="images/dest/gallery/3.jpg" data-full="images/dest/gallery/3.jpg" class="m-p-g__thumbs-img shadow" alt="portfolio"/>
+						<img src="images/dest/gallery/4.jpg" data-full="images/dest/gallery/4.jpg" class="m-p-g__thumbs-img shadow" alt="portfolio"/>
+						<img src="images/dest/gallery/5.jpg" data-full="images/dest/gallery/5.jpg" class="m-p-g__thumbs-img shadow" alt="portfolio"/>
+						<img src="images/dest/gallery/6.jpg" data-full="images/dest/gallery/6.jpg" class="m-p-g__thumbs-img shadow" alt="portfolio"/>
+						<img src="images/dest/gallery/7.jpg" data-full="images/dest/gallery/7.jpg" class="m-p-g__thumbs-img shadow" alt="portfolio"/>
+					</div>
+				
+					<div class="m-p-g__fullscreen"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="sizes" class="sizes movie" data-aos="fade-up">
+		<h2 class="h2" >Pomiary</h2>
+		<p class="descr" >Metoda pobierania wymiarów:</p>
+		<div class="container">
+			<div class="size-img">
+				<img class="shadow"   src="images/dest/pomiar1pl.png" alt="pomiar1">
+				<img class="shadow"  src="images/dest/pomiar2.png" alt="pomiar1">
+			</div>
+			
+			<div class="size-inform">
+				<div class="col-md col-lg-6">
+					<div class="sizes-text-wrap" >
+						<p><samp class="big">W</samp>przypadku psa będącego w stanie zrobić kroki tylnymi łapami o własnych siłach (film porównawczy) potrzebny jest pomiar kroku tylnej łapy (rys.3)</p>
+					</div>
+				</div>
+				<div class="col-md col-lg-6">
+					<video controls>
+						<source src="video/7.mp4">
+					</video>
+				</div>			
+			</div>
+			<div class="size-inform">
+				<ul class="size-text-list">
+					<li>Z pozycji stojącej zaznaczyć pierwszy krok łapy np. lewej</li>
+					<li>Idąc dalej do przodu zaznaczyć drugi krok tej samej łapy</li>
+					<li>Zmierzyć odległość między zaznaczonymi punktami</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section id="opinie" class="opinie movie"  data-aos="fade-up">
+		<h2 class="h2" >Opinie</h2>
+		<div class="container">
+			<div class="splide">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">							
+								<img class="openie" src="images/dest/coments/1.jpg" data-splide-lazy="images/dest/coments/1.jpg" alt="opinie1">						
+						</li>
+						<li class="splide__slide">					
+								<img class="openie" src="images/dest/coments/2.jpg" data-splide-lazy="images/dest/coments/2.jpg" alt="opinie1">							
+						</li>
+						<li class="splide__slide">					
+								<img class="openie" src="images/dest/coments/3.jpg" data-splide-lazy="images/dest/coments/3.jpg" alt="opinie1">							
+						</li>
+						<li class="splide__slide">							
+								<img class="openie" src="images/dest/coments/4.jpg" data-splide-lazy="images/dest/coments/4.jpg" alt="opinie1">						
+						</li>
+						<li class="splide__slide">							
+							<img class="openie" src="images/dest/coments/5.jpg" data-splide-lazy="images/dest/coments/5.jpg" alt="opinie1">						
+						</li>
+						<li class="splide__slide">							
+							<img class="openie" src="images/dest/coments/6.jpg" data-splide-lazy="images/dest/coments/6.jpg" alt="opinie1">						
+					    </li>
+						<li class="splide__slide">							
+							<img class="openie" src="images/dest/coments/7.jpg" data-splide-lazy="images/dest/coments/7.jpg" alt="opinie1">						
+						</li>
+						<li class="splide__slide">							
+							<img class="openie" src="images/dest/coments/8.jpg" data-splide-lazy="images/dest/coments/8.jpg" alt="opinie1">						
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="about movie" data-aos="fade-up">
+		<h2 class="h2" >O nas</h2>
+		<div class="container">
+			<div class="row">
+				<div class="sizes-text-wrap">
+					<p><samp class="big">W</samp>itamy na naszej stronie poświęconej psom szczególnej troski!!!</p>
+					<p><samp class="big">M</samp>amy tu na myśli psy, których właściciele znaleźli się w nietypowej sytuacji, a mianowicie z problemem porażenia kręgosłupa, a tym samym paraliżu lub utraty przez swojego pupila częściowej ruchomości tylnych łap. Chcielibyśmy z nieukrywanym zadowoleniem poinformować Państwa o możliwości wyjścia z tej niezbyt fortunnej sytuacji.
+					</p>
+					<p><samp class="big">N</samp>ie ma się, co martwic. <samp class="big">N</samp>ie potrzeba już uciekać się do ostateczności i decydować się na tak bolesne dla właścicieli rozwiązanie, jakim jest uśpienie naszego psiaka. Oprócz zabiegu chirurgicznego istnieje opcja w postaci <samp class="big">WÓZKA REHABILITACYJNEGO DLA PSA.</samp></p>
+					<p><samp class="big">J</samp>est to jedno z wyjść pozwalające chorym psom poruszać się samodzielnie na spacerach w zależności od swoich możliwości na dwóch bądź trzech lub czterech łapach. <samp class="big">W</samp>szystko uwarunkowane jest indywidualna sprawnością i temperamentem psa. <samp class="big">w</samp>ózek jest lekki, trwały, wygodny, łatwy w obsłudze i estetycznie wykonany. <samp class="big">w</samp>ozwala on na:
+					</p>
+					<p><samp class="big">s</samp>amodzielne poruszanie się podczas spacerów</p>
+					<p><samp class="big">w</samp>yręczenie właścicieli od uciążliwego noszenia psów na paskach, szalikach, nosidłach itp.</p>
+					<p><samp class="big">u</samp>możliwienie zwierzętom swobodnego "załatwiania" potrzeb fizjologicznych</p>
+
+					<p><samp class="big">Z</samp>apewnienie ruchu, dłuższe przebywanie na spacerach</p>
+					<p><samp class="big">p</samp>oprawienie sprawności fizycznej oraz dobre samopoczucie</p>
+					<p><samp class="big">s</samp>tabilizuje kręgosłup</p>
+					<p><samp class="big">s</samp>Służy do rehabilitacji pozabiegowej</p>
+					<p><samp class="big">W</samp>ózki umożliwiają szybszy powrót do aktywnego życia po przebytej operacji a także pomagają w trakcie leczenia farmakologicznego
+					</p>
+					<p><samp class="big">t</samp>ak, to fajna rzecz widzieć znowu swojego psa na spacerze z "wywalonym jęzorem" i zadowolonymi oczami, a nie smutnego, patrzącego przez szybę na podwórko lub z balkonu na dół. Wiemy coś o tym, bo mamy takiego psa. Jeździ na swym wózku codziennie już od wielu lat i ma się dobrze. Trzeba pamiętać, że psy akceptują swoje kalectwo bardzo szybko, a mamy szansę przywrócić im mobilność i radość. Dla zapoznania się z wózkami umieściliśmy zdjęcia w zależności od wagi i wielkości psa.
+					</p>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contact" class="contact movie" data-aos="fade-up">
+		<h2 class="h2">kontakt</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-1">
+					<form   class="form" method="post">
+						<div class="form-row">
+							<div class="col-md-6">
+							<input type="text" class="form-control shadow" id="validationCustom01" placeholder="Imię"  required>
+							</div>
+							<div class="col-md-6">
+							<input type="text" class="form-control shadow" id="validationCustom02" placeholder="Nazwisko"  required>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="col-md-6">
+								<input type="email" class="form-control shadow" id="inputEmail3" placeholder="E-mail">
+							</div>
+							<div class="col-md-6">
+							<input type="tel" class="form-control shadow" id="validationCustom03" placeholder="Telefon komórkowy"  required>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="col-md-12">
+								<textarea class="form-control textarea shadow" id="exampleFormControlTextarea1" placeholder="Treść wiadomości" rows="3"></textarea>
+							</div>
+						</div>
+						<button class="submit shadow" type="submit">Kliknij</button>
+					</form>
+				</div>
+				<div class="col-md-4 ">
+					<div class="contact-container shadow">
+						<h3 class="h3">Dane kontaktowe</h3>
+						<div class="contact-container-wrap">
+							<span>Komórka:</span> <a href="tel:+48798254425">  +48 798 25 44 25</a>
+						</div>
+						<div class="contact-container-wrap">
+						<samp>Email:</samp> <a href="mailto:abc@example.com">  info@dogxtension.eu</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</section>
+	<footer>
+		Copyright © 2020 Lamax-Code. All Rights Reserved
+	</footer>
+
+	<script src="js/app.min.js"></script>
+</body>
+</html>
