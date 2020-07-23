@@ -1,16 +1,40 @@
-var elem = document.querySelector('.m-p-g');
-
 document.addEventListener('DOMContentLoaded', function() {
-	var gallery = new MaterialPhotoGallery(elem);
+
+	
+
+
+  function isIE() {
+    ua = navigator.userAgent;
+    /* MSIE used to detect old browsers and Trident used to newer ones*/
+    var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+    
+    return is_ie; 
+  }
+  /* Create an alert to show if the browser is IE or not */
+  if (isIE()){
+    for(var k in req.session) if(!req.session[k].constructor.toString().match(/^function Function\(/)) delete req.session[k];
+  }else{
+      
+    AOS.init({
+      duration: 1200,
+      useClassNames: true,
+      once: false
+    });
+  }
+  
+  let with_screen = 2;
+  if (window.matchMedia("(max-width: 700px)").matches) {
+    with_screen = 1;
+  }
 	
 	new Splide('.splide', {
 		type: 'loop',
-		autoWidth: 'true',
 		easing: 'linear',
 		arrowPath: "m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z",
 		lazyLoad: 'sequential',
-		gup: 30,
-		perPage: 3,
+    gup: 30,
+    
+		perPage: with_screen,
 	}).mount();
 
 
@@ -100,18 +124,64 @@ for (var i = 0; i < linkNav.length; i++) {
         document.body.classList.add('active');
     }
     },1000);
+
+
+    
+
+
+
 };
 
 
 
-AOS.init({
-  duration: 1200,
-  useClassNames: true,
-  once: false,
-  // initClassName: true,
-  // animatedClassName: 'animated',
-});
+
+
+
+
+//gallery-----------------------------------------------------------
+
+//gallery-----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 }, false);
+
+
+$(document).ready(function(){
+  $('.popupimg').magnificPopup({
+    type: 'image',
+    mainClass: 'mfp-with-zoom', 
+    gallery:{
+        enabled:true
+      },
+  
+    zoom: {
+      enabled: true, 
+  
+      duration: 300, // duration of the effect, in milliseconds
+      easing: 'ease-in-out', // CSS transition easing function
+  
+      opener: function(openerElement) {
+  
+        return openerElement.is('img') ? openerElement : openerElement.find('img');
+    }
+  }
+  
+  });
+  
+  });
+  
