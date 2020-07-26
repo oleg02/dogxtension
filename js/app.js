@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
     AOS.init({
       duration: 1200,
       useClassNames: true,
-      once: false
+      once: false,
+      debounceDelay : 50
     });
   }
   
@@ -185,3 +186,4 @@ $(document).ready(function(){
   
   });
   
+
